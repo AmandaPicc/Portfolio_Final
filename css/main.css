@@ -1,0 +1,110 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Barlow', sans-serif;
+  }
+  
+  /*--- navigation bar ---*/
+  
+  .navbar {
+    background:#3D5467;
+    font-family: 'Barlow', sans-serif;
+    font-size: x-large;
+  }
+  
+  .nav-link,
+  .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+    padding-left: 2%;
+  }
+  
+  .nav-link {
+    margin-right: 1em !important;
+  }
+  
+  .nav-link:hover {
+    color: #DB5461;
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+/*--- about me blue header ---*/ 
+  .header {
+    background-color: #3D5467;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-family: 'Barlow', sans-serif;
+    padding: 7% 4% 5%;
+    height: fit-content;
+  }
+
+  .about {
+    text-align: left;
+    font-family: 'Barlow', sans-serif;
+    background-color: #3D5467;
+
+  }
+  
+  .about h1 {
+    color: #ffffff;
+    font-family: 'Barlow', sans-serif;
+  }
+  
+  .about p {
+    color: #ffffff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  /*--- Work section on main page ---*/ 
+
+  .work {
+    background-color: #ffffff;
+    padding: 0%, 4%, 4%;
+
+
+  }
+
+  .work h2{
+    padding: 7% 4% 5%;
+
+  }
+
+
+    /*--- Work section on main page ---*/ 
+
+    
+    .cards {
+        display:inline-block;
+    }
+    
+
+
+    /*---- Bootstrap Cards ---*/
+
+
+    .bottom {
+    background-color: #DB5461;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-family: 'Barlow', sans-serif;
+    padding: 7% 4% 5%;
+    height: fit-content;
+    display: inline-block;
+
+    }
+
+    .bottom h3{
+        color: #ffffff;
+    }
+  
+    .bottom p{
+        color: #ffffff
+    }
+    }
