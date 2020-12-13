@@ -251,9 +251,16 @@ body {
   color: #3D5467
 }
 
+.narrative b{
+  font-weight: 550; 
+  color: #6247AA;
+  
+}
 
 .narrative-container{
   margin: 0%;
 }
 
-
+.narrative li{
+  padding-top: 4%;
+}
