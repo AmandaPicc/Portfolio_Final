@@ -3,6 +3,7 @@ body {
     margin: 0;
     background-color: #ffffff;
     font-family: 'Barlow', sans-serif;
+    font-weight: lighter;
   }
   
   /*--- navigation bar ---*/
@@ -10,7 +11,7 @@ body {
   .navbar {
     background:#3D5467;
     font-family: 'Barlow', sans-serif;
-    font-size: x-large;
+    font-size: large;
   }
   
   .nav-link,
@@ -32,14 +33,19 @@ body {
     justify-content: flex-end;
   }
 
+
+
 /*--- about me blue header ---*/ 
+
+
   .header {
     background-color: #3D5467;
     background-size: cover;
     background-position: center;
     position: relative;
     font-family: 'Barlow', sans-serif;
-    padding: 7% 4% 5%;
+    font-size: medium;
+    padding: 5% 4% 0%;
     height: fit-content;
   }
 
@@ -57,36 +63,114 @@ body {
   
   .about p {
     color: #ffffff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.5;
   }
 
-  /*--- Work section on main page ---*/ 
+  .about li{
+    color: #ffffff;
+  }
 
+  /*--Text animation --*/
+
+
+  /*-- Image animation  --*/
+.bounce-in-top {
+	animation: bounce-in-top 2s 1s both;
+}
+  
+/* ----------------------------------------------
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * animation bounce-in-top
+ * ----------------------------------------*/
+
+ @keyframes bounce-in-top {
+  0% {
+    transform: translateY(-300px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+
+ /*--- Work section on main page ---*/ 
   .work {
     background-color: #ffffff;
-    padding: 0%, 4%, 4%;
+    padding: 2%, 4%, 0%;
 
 
   }
 
   .work h2{
-    padding: 7% 4% 5%;
+    padding: 1% 4% 2%;
+    color: #3D5467;
+    font-weight: 600;
+
 
   }
 
+  .work h3{
+    font-weight: 400;
+    color: #3D5467;
+    font-size: x-large;
+  }
 
-    /*--- Work section on main page ---*/ 
+  .work h4{
+    font-size: medium;
+    font-weight: 600;
+    color: #DB5461;
+  }
 
-    
+   
+
+ /*---- Bootstrap Cards ---*/ 
     .cards {
-        display:inline-block;
+        display: inline-flex;
+        width: 49%;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+        padding: 4%;
     }
     
-
-
-    /*---- Bootstrap Cards ---*/
-
+    .cards:hover{
+      top: -10px;
+    }
+  
+    .cards img{
+     max-height: 500px; 
+    }
 
     .bottom {
     background-color: #DB5461;
@@ -94,9 +178,8 @@ body {
     background-position: center;
     position: relative;
     font-family: 'Barlow', sans-serif;
-    padding: 7% 4% 5%;
+    padding: 2% 4% 2%;
     height: fit-content;
-    display: inline-block;
 
     }
 
@@ -107,4 +190,70 @@ body {
     .bottom p{
         color: #ffffff
     }
-    }
+    
+  /*---Homepage Footer---*/
+
+  /*---Project Pages---*/
+
+/.project{
+  background-color: #3D5467;
+}
+
+.project h1{
+  color: #ffffff;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  padding-top: 2%;
+}
+
+.project h2{
+  color: #ffffff;
+  font-family: 'Barlow', sans-serif;
+  font-weight: lighter;
+}
+
+.details h4{
+  font-size: large;
+  font-weight: 700;
+  margin-bottom: -25px;
+
+}
+
+.details{
+  padding: 4%;
+  font-size: large;
+  
+}
+
+.details h2{
+  font-weight:700;
+  color: #3D5467
+}
+
+.details img{
+  width: 110%;
+  margin-top: -100px;
+}
+
+.narrative{
+  padding: 4%;
+  font-size: large;
+  background-color: #EBECF0;
+  width: 100%;
+}
+
+.narrative img{
+  width: 100%;
+}
+
+.narrative h2{
+  font-weight:700;
+  color: #3D5467
+}
+
+
+.narrative-container{
+  margin: 0%;
+}
+
+

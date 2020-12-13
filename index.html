@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   </head>
 <body>
 
 <!-- Navigation bar with logo image -->
 <nav class="navbar navbar-expand-md">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="index.html">
     <img src="assets/ajpLogo.png" width="200" href="home.html" alt="Amanda Piccolini logo">  </a>
   </a>
   <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
@@ -22,7 +23,7 @@
   <div class="collapse navbar-collapse" id="main-navigation">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="projects.html">MHCI Projects</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="design.html">Design</a>
@@ -38,46 +39,77 @@
 <header class="page-header header container-fluid">
   <div class="about">
     <div class="row">
-      <div class="col-sm-8">
-      <h1>Hi! I'm Amanda.</h1>
-      <p>An aspiring UX designer looking to positively impact lives through the intersection of creativity and technology. <br/><br/>
-          I love mountain views, well-placed white space, and giant dogs. I’m an avid reader, an occasional world-traveler, and a former Division I volleyball player. </p>
-      </div>
-      <div class="col-sm-4">
-      <p><img class="img-responsive" src="assets/aboutProfilePhoto.png" alt="profile photo of Amanda" width="100%"></p>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!--Image -- Need to figure out how to incorporate
-<img class="img-responsive src="assets/blueWave-01.png" alt="blue wave" width="100%"> -->
-
-<!-- Work sections !-->
-<div class="work">
-  <h2>Recent Work</h2>
-
-  <!-- Cards!-->
-  <div class="cards" style="padding: 4%;">
-  <div class ="shadow p-3 mb-5 bg-white rounded" style="max-width: 500px; background-color:#f5f5f5; padding-left: 4%;" >
-      <div class="col-md-12">
-        <img src="assets/XRay_Card-02.png" class="card-img" alt="dashboard interface on computer">
-      </div>
-      <div class="col-md-15">
-        <div class="card-body">
-          <h5 class="card-title">Adidas X-Ray</h5>
-          <p class="card-text">This is a very brief description of the project. It will be 2-3 sentences long. To be filled out. </p>
-          <p class="card-text"><small class="text-muted">UI design  •  Visual design</small></p>
+      <div class="col-sm-6">
+        <div data-aos="flip-left">
+          <h1>Hi! I'm Amanda.</h1>
+          <p>An aspiring UX designer looking to positively impact lives through the intersection of creativity and technology. <br/><br/>
+              I love mountain views, well-placed white space, and giant dogs. I’m an avid reader, an occasional world-traveler, and a former Division I volleyball player. </p>
+            <br/>
+          <ul>
+            <li>Full-time Senior Designer @ Deloitte</li>
+            <li>Part-time MHCI Student at Carnegie Mellon University</li>
+            <li>Based in Pittsburgh, PA</li>
+          </ul>
         </div>
       </div>
-  </div>   
+      
+<!--About Me Image-->
+        <div class="col-sm-5">
+          <div class="bounce-in-top">
+              <p><img class="img-responsive" src="assets/aboutProfilePhoto.png" alt="profile photo of Amanda" width="75%"></p>
+          </div>
+        </div>  
+      </div>
+</header>
+
+<div class="wave">
+  <img class="img-responsive" src="assets/blueWave-01.png" alt="blue wave at bottom of header section" width="100%">
 </div>
 
+<!-- Work sections !-->
+<div class="work" data-aos="fade-up" >
+  <h2 >Recent work</h2>
+
+  <!-- Cards!-->
+  <div class="container-sm">
+  <div class="cards">
+      <div class ="shadow p-3 mb-5 bg-white rounded" style=background-color:#f5f5f5; padding-left: 4%;   >
+        <div class="col-md-12">
+          <img src="assets/ACRA/Cover Photo.png" class="card-img" alt="dashboard interface on computer">
+        </div>
+        <div class="col-md-15">
+          <div class="card-body">
+            <h3 class="card-title"><b>Animal Foster Application</b><br>A responsive web solution</h3>
+            <h4>MHCI Project</h4>
+            <p class="card-text">This is a very brief description of the project. It will be 2-3 sentences long. To be filled out.</p>
+            <p class="card-text"><small class="text-muted"> UI design  •  Visual design  •  Presentation design</small></p>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+
+    <div class="cards">
+    <div class ="shadow p-3 mb-5 bg-white rounded" style= background-color:#f5f5f5; padding-left: 4%; >
+      <div class="col-md-12">
+        <img src="assets/Crooked/Crooked Mockup.png" class="card-img" alt="dashboard interface on computer">
+      </div>
+    
+      <div class="col-md-15">
+        <div class="card-body">
+          <h3 class="card-title"><b>The Crooked Company</b><br>Visual Identity</h3>
+          <h4>Design</h4>
+          <p class="card-text">This is a very brief description of the project. It will be 2-3 sentences long. To be filled out. </p>
+          <p class="card-text"><small class="text-muted" >Branding  •  Logo design  •  Print design  •  Digital design </small></p>
+        </div>
+      </div>
+    </div>  
+  </div>
 </div>
 </div>
 
 <!-- Bottom content-->
-<div class="bottom">
+<div class="bottom" data-aos="fade-up" >
       <div class="row">
         <div class="col-sm-8">
         <h3>It's me again.</h3>
@@ -89,8 +121,15 @@
     </div>
 
         <img src="assets/linkedin-3-32.png" alt="" style="padding-right:20px ;"> 
-        <button type="button" class="btn btn-outline-primary" style="color: #ffffff; border-color: #ffffff;" >Resume</button>    
-<script src="jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+        <button type="button" class="btn btn-outline-secondary" style="color: #ffffff; border-color: #ffffff;" >Resume</button>    
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200, delay:00, duration: 1000, easing:'ease'
+      });
+    </script>
 </body>
 </html>
